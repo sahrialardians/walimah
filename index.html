@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Walimah | Mayan & Aal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow: hidden; /* Disable manual scrolling */
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .bg-pattern {
+            background-image: url('assets/images/background.svg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .font-script {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+<body class="bg-pattern">
+
+    <!-- Decorative Flower Top Right -->
+    <div class="relative overflow-hidden">
+        <div class="fixed -top-10 -right-20 translate-x-1/2 -translate-y-1/4">
+            <img class="w-40" src="assets/images/decorate-2.png" alt="Decorative Flower"/>
+        </div>
+    </div>
+
+    <!-- Cover Section -->
+    <section id="cover" class="min-h-screen flex items-center">
+        <div class="container mx-auto text-center">
+            <h2 class="text-blue-900 text-lg pt-26">Undangan</h2>
+            <h1 class="text-base font-script font-bold text-blue-900 text-4xl mb-4">Walimatul 'Urs</h1>
+            <div>
+                <img class="h-80 mx-auto" src="assets/images/human.png" alt="Bride and Groom"/>
+            </div>
+            <h3 class="font-bold font-script text-yellow-400 text-4xl my-4">Aal & Mayan</h3>
+            <p class="text-blue-900 text-lg mb-10">
+                31-08-2024
+            </p>
+            <button id="open-invitation" class="text-base font-bold text-white bg-yellow-400 py-3 px-8 rounded-full shadow-lg hover:shadow-xl hover:opacity-80 transition duration-300 ease-in-out">Buka Undangan</button>
+        </div>
+    </section>
+
+    <!-- Bride Section -->
+    <section id="bride" class="hidden min-h-screen flex items-center pt-12 pb-32">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-wrap">
+                <div class="w-full px-6 mb-10">
+                    <h1 class="text-base font-script font-bold text-yellow-400 text-4xl mb-4">بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+                    <h3 class="font-script font-bold text-blue-900 text-3xl mb-8">Assalamu'alaikum Warahmatullahi Wabarakatuh</h3>
+                    <p class="text-blue-900 text-lg">
+                        Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan, Ya Allah perkenankanlah kami untuk melaksanakan pernikahan putri-putra kami :
+                    </p>
+                </div>
+
+                <div class="w-full px-6">
+                    <h3 class="font-script font-bold text-yellow-400 text-3xl">Mayantira Patiasa Sinaga</h3>
+                    <span class="block text-blue-900 text-lg mb-6">Putri dari Bapak Rindaman Sinaga & Ibu Sri Iriani</span>
+                    <h3 class="font-script font-bold text-yellow-400 text-3xl mb-8">&</h3>
+                </div>
+
+                <div class="w-full px-6">
+                    <h3 class="font-script font-bold text-yellow-400 text-3xl">Sahrial</h3>
+                    <span class="block text-blue-900 text-lg">Putra dari Bapak Ipas Ardiansyah & Ibu Saniyah</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Date Section -->
+    <section id="date" class="hidden min-h-screen flex items-center pt-35 pb-32">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-wrap">
+                <div class="w-full px-6">
+                    <h1 class="text-base font-script font-bold text-yellow-400 text-4xl mb-4">Akad & Walimah</h1>
+                    <h4 class="text-blue-900 text-lg">
+                        In syaa Allah akan dilaksanakan Akad nikah & walimah pada :
+                    </h4>
+                    <p class="text-blue-900 text-lg">
+                        Sabtu, 31 Agustus 2024 <br>
+                        09.00 - 18.00 WIB
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="hidden min-h-screen flex items-center pt-35 pb-32">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-wrap">
+                <div class="w-full px-6">
+                    <h2 class="text-base font-script font-bold text-yellow-400 text-4xl mb-4">Lokasi</h2>
+                    <h4 class="text-blue-900 text-lg">
+                        Rumah Mempelai Wanita
+                    </h4>
+                    <p class="text-blue-900 text-lg">
+                        Huta Lantosan - Nagori Gunung Bayu
+                    </p>
+                    <div class="relative pb-[56.25%] h-0 overflow-hidden max-w-3xl mx-auto mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7516908204575!2d99.31682097570919!3d3.160020153084205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3033d1d27d9b7b21%3A0x7aad5e71a54b6ca5!2sGaruda%20Residence!5e0!3m2!1sid!2sid!4v1724064857589!5m2!1sid!2sid" 
+                            class="absolute top-0 left-0 w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section id="terms" class="hidden min-h-screen flex items-center pt-35 pb-32">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-wrap">
+                <div class="w-full px-6">
+                    <h2 class="text-base font-script font-bold text-yellow-400 text-4xl mb-4">Adab Menghadiri Walimah</h2>
+                    <h4 class="text-blue-900 text-lg">
+                        Terima kasih telah memperhatikan adab-adab di pernikahan kami
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doa Section -->
+    <section id="doa" class="hidden min-h-screen flex items-center pt-35 pb-12">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-wrap">
+                <div class="w-full px-6">
+                    <h4 class="text-base font-script font-bold text-yellow-400 text-4xl mb-4">Doa Pengantin</h4>
+                    <h2 class="text-blue-900 font-script text-4xl mb-8">
+                        بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِى خَيْرٍ
+                    </h2>
+                    <p class="text-blue-900 text-lg">
+                        “Semoga Allah memberkahimu ketika bahagia dan ketika susah dan mengumpulkan kalian berdua dalam kebaikan.” <br>
+                        (HR. Abu Daud, no. 2130)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <audio id="invitation-audio" src="assets/audios/message-of-change-bader-alhamoudi.mp3"></audio>
+
+    <!-- Thanks Section -->
+
+    <!-- Navbar -->
+    <nav id="menu" class="hidden fixed bottom-8 left-0 right-4 bg-white shadow-lg rounded">
+        <div class="container mx-auto flex gap-4 justify-end py-6 pr-8">
+            <a href="#bride" class="text-blue-900 font-medium hover:text-yellow-500" onclick="scrollToSection(event, 'bride')">About</a>
+            <a href="#date" class="text-blue-900 font-medium hover:text-yellow-500" onclick="scrollToSection(event, 'date')">Akad</a>
+            <a href="#location" class="text-blue-900 font-medium hover:text-yellow-500" onclick="scrollToSection(event, 'location')">Lokasi</a>
+            <a href="#terms" class="text-blue-900 font-medium hover:text-yellow-500" onclick="scrollToSection(event, 'terms')">Adab</a>
+            <a href="#doa" class="text-blue-900 font-medium hover:text-yellow-500" onclick="scrollToSection(event, 'doa')">Thanks</a>
+        </div>
+    </nav>
+    
+    <!-- Floating Button for Audio Control -->
+    <div id="audio" class="hidden fixed bottom-20 right-6 bg-yellow-400 rounded-full p-2 shadow-lg cursor-pointer hover:bg-yellow-500 transition duration-300 ease-in-out">
+        <img id="play-pause-icon" src="assets/images/pause.svg" alt="Play/Pause" class="p-2 w-8 h-8"/>
+    </div>
+
+    <!-- Decorative Element Bottom Left -->
+    <div class="relative overflow-hidden">
+        <div class="fixed bottom-10 left-0 transform -translate-x-1/12 translate-y-1/4" onclick="scrollToSection(event, 'bride')">
+            <img class="w-40" src="assets/images/decorate-1.png" alt="Decorative Flower"/>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle section navigation -->
+    <script>
+        function scrollToSection(event, sectionId) {
+            event.preventDefault();
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        document.getElementById('open-invitation').addEventListener('click', function() {
+            document.getElementById('cover').classList.add('hidden');
+            document.getElementById('audio').classList.remove('hidden');
+            document.getElementById('menu').classList.remove('hidden');
+            document.getElementById('bride').classList.remove('hidden');
+            document.getElementById('date').classList.remove('hidden');
+            document.getElementById('location').classList.remove('hidden');
+            document.getElementById('terms').classList.remove('hidden');
+            document.getElementById('doa').classList.remove('hidden');
+
+            const audio = document.getElementById('invitation-audio');
+            audio.play(); 
+        });
+
+        // Floating button for audio control
+        const audio = document.getElementById('invitation-audio');
+        const floatingButton = document.getElementById('audio');
+        const playPauseIcon = document.getElementById('play-pause-icon');
+
+        floatingButton.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                playPauseIcon.src = 'assets/images/pause.svg'; // Change to pause icon
+                playPauseIcon.classList.remove('no-spin'); // Continue spin animation
+            } else {
+                audio.pause();
+                playPauseIcon.src = 'assets/images/play.svg'; // Change to play icon
+                playPauseIcon.classList.add('no-spin'); // Pause spin animation
+            }
+        });
+
+        // Stop spinning when audio ends
+        audio.addEventListener('ended', function() {
+            playPauseIcon.classList.add('no-spin'); // Pause spin animation when audio ends
+            playPauseIcon.src = 'assets/images/play.svg'; // Change to play icon
+        });
+    </script>
+</body>
+</html>
