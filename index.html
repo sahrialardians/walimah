@@ -236,7 +236,10 @@
             document.getElementById('doa').classList.remove('hidden');
 
             const audio = document.getElementById('invitation-audio');
+            const screenFull = document.getElementById('invitation-audio');
+            
             audio.play(); 
+            openFullscreen(screenFull);
         });
 
         // Floating button for audio control
@@ -261,6 +264,17 @@
             playPauseIcon.classList.add('no-spin'); // Pause spin animation when audio ends
             playPauseIcon.src = 'assets/images/play.svg'; // Change to play icon
         });
+
+        /* View in fullscreen */
+        function openFullscreen(screenFull) {
+            if (screenFull.requestFullscreen) {
+                screenFull.requestFullscreen();
+            } else if (screenFull.webkitRequestFullscreen) { /* Safari */
+                screenFull.webkitRequestFullscreen();
+            } else if (screenFull.msRequestFullscreen) { /* IE11 */
+                screenFull.msRequestFullscreen();
+            }
+        }
     </script>
 </body>
 </html>
