@@ -43,15 +43,15 @@
     <section id="cover" class="min-h-screen flex items-center">
         <div class="container mx-auto text-center">
             <h2 class="text-blue-900 text-lg pt-26">Undangan</h2>
-            <h1 class="text-base font-script font-bold text-blue-900 text-3xl mb-4">Walimatul 'Urs</h1>
+            <h1 class="text-base font-script font-bold text-blue-900 text-3xl mb-8">Walimatul 'Urs</h1>
             <div>
-                <img class="h-80 mx-auto" src="assets/images/human.png" alt="Bride and Groom"/>
+                <img class="h-40 mx-auto" src="assets/images/cover.png" alt="Bride and Groom"/>
             </div>
-            <h3 class="font-bold font-script text-yellow-400 text-3xl my-4">Aal & Mayan</h3>
+            <h3 class="font-bold font-script text-yellow-400 text-3xl mb-2">Aal & Mayan</h3>
             <p class="text-blue-900 text-lg mb-6">
                 31-08-2024
             </p>
-            <button id="open-invitation" class="text-base font-bold text-white bg-yellow-400 py-3 px-8 rounded-full shadow-lg hover:shadow-xl hover:opacity-80 transition duration-300 ease-in-out">Buka Undangan</button>
+            <button id="open-invitation" class="text-base font-bold text-white bg-yellow-400 py-2 px-6 rounded-full shadow-lg hover:shadow-xl hover:opacity-80 transition duration-300 ease-in-out">Buka Undangan</button>
         </div>
     </section>
 
@@ -189,6 +189,9 @@
                     </h2>
                     <div class="w-60 mx-auto">
                         <img src="assets/images/signed.png">
+                        
+                        <p class="text-base text-blue-900 mt-8">Design & build by sahrialardians</p>
+                        <p class="text-sm text-blue-900 mb-4">Illustrations by <a href="https://id.pngtree.com/pngtree-24601434_24601434" target="_blank" rel="noopener noreferrer">pngtree.com</a></p>
                     </div>
                 </div>
             </div>
@@ -208,7 +211,7 @@
             <a href="#terms" class="text-blue-900 font-medium hover:text-yellow-500" onclick="scrollToSection(event, 'terms')">Adab</a>
             <a href="#doa" class="text-blue-900 font-medium hover:text-yellow-500" onclick="scrollToSection(event, 'doa')">Thanks</a>
         </div>
-    </nav>
+    </nav>    
     
     <!-- Floating Button for Audio Control -->
     <div id="audio" class="hidden fixed bottom-20 right-4 bg-yellow-400 rounded-full p-2 shadow-lg cursor-pointer hover:bg-yellow-500 transition duration-300 ease-in-out">
@@ -243,10 +246,7 @@
             document.getElementById('doa').classList.remove('hidden');
 
             const audio = document.getElementById('invitation-audio');
-            const screenFull = document.getElementById('invitation-audio');
-
-            audio.play(); 
-            openFullscreen(screenFull);
+            audio.play();
         });
 
         // Floating button for audio control
@@ -271,17 +271,6 @@
             playPauseIcon.classList.add('no-spin'); // Pause spin animation when audio ends
             playPauseIcon.src = 'assets/images/play.svg'; // Change to play icon
         });
-
-        /* View in fullscreen */
-        function openFullscreen(screenFull) {
-            if (screenFull.requestFullscreen) {
-                screenFull.requestFullscreen();
-            } else if (screenFull.webkitRequestFullscreen) { /* Safari */
-                screenFull.webkitRequestFullscreen();
-            } else if (screenFull.msRequestFullscreen) { /* IE11 */
-                screenFull.msRequestFullscreen();
-            }
-        }
     </script>
 </body>
 </html>
